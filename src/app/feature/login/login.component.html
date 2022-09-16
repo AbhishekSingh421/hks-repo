@@ -1,0 +1,16 @@
+<div class="login">
+    <p>Welcome to HKS</p>
+
+    <form class="flex loginForm" [formGroup]="reactiveForm">
+        <div class="box">
+            <input type="text" placeholder="Email" type="email" placeholder="enter email here.." formControlName="email" required>
+        </div><br>
+        <div class="box">
+            <input type="text" type="password" placeholder="Password" placeholder="enter password here.." formControlName="password" required>
+        </div>
+        <div>
+            <button style="margin-left: 60px;margin-top: 30px;" class="login-otp-btn" type="submit" (click)="onSubmit()">Login</button>
+
+        </div>
+    </form>
+</div>
